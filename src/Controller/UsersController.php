@@ -110,7 +110,6 @@ class UsersController extends AppController
         // the infinite redirect loop issue
         $this->Authentication->addUnauthenticatedActions(['login']);
         $this->Authentication->addUnauthenticatedActions(['login', 'add']);
-        $this->Authorization->skipAuthorization();
     }
 
     public function login()
